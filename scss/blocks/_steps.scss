@@ -1,0 +1,195 @@
+.steps {
+   margin-top: clamp(3.125rem, 1.534rem + 7.95vw, 7.5rem);
+   &_container {
+      padding: 0 20px;
+   }
+
+   &_title {
+      margin-bottom: 48px;
+   }
+
+   &_columns {
+  
+
+   }
+
+   &_column {
+      display: flex;
+      align-items: center;
+    
+      margin-bottom: 24px;
+      &:last-child{
+         margin-bottom: 0;
+      }
+
+   }
+
+   &_column-num {
+      float: left;
+      position: relative;
+      z-index: 50;
+      shape-outside: circle();
+      clip-path: circle();
+      display: block;
+      background: #0B7572;
+      /* green */ 
+      border: 4px solid #0B7572;
+      height: 68px;
+      width: 70px;
+      box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.12);
+      font-family: 'Exo 2';
+      font-style: normal;
+      font-weight: 600;
+      font-size: 38px;
+      /* or 48px */
+      text-align: center;
+   padding-top: 10px;      
+         /* white */
+      
+      color: #FFFFFF;
+   }
+  
+   &_column-content {
+      margin-left: -20px;
+      padding: 32px 0;
+      display: flex;
+      align-items: center;
+      box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.12) !important;
+      border-radius: 10px;
+      background: #FFFFFF;
+      position: relative;
+      width: 100%;
+      &::before{
+         content: "";   
+         
+         width: 40px;
+         height: 46px * 2;
+         position: absolute;
+         top: 31%;
+         box-shadow: inset 0px 4px 15px rgba(0, 0, 0, 0.12) !important;
+         left: 0;
+         border-bottom-right-radius: 88px;
+         border-top-right-radius: 88px;
+          @media (max-width: 944px) {
+            top: 34%;
+          }
+           @media (max-width: 887px) {
+            top: 35%;
+           }
+            @media (max-width: 850px) {
+               top: 36%;
+            }
+             @media (max-width: 822px) {
+               top: 37%;
+             }
+              @media (max-width: 800px) 
+              {
+               top: 38%;
+              }
+               @media (max-width: 768px) {
+                  top: 31%;
+               }
+                @media (max-width: 630px) {
+                  top: 32%;
+                }
+                 @media (max-width: 595px) {
+                  top: 33%;
+                 }
+                  @media (max-width: 539px) {
+                     top: 34%;
+                  }
+                   @media (max-width: 495px) {
+                     top: 35%;
+                   }
+                    @media (max-width: 450px) {
+                     top: 37%;
+                    }
+                     @media (max-width: 425px) {
+                        top: 38%;
+                     }
+                      @media (max-width: 395px) {
+                        top: 39%;
+                      }
+                       @media (max-width: 380px) {
+                        top: 40%;
+                       }
+                        @media (max-width: 350px) {
+                           top: 41%;
+                        }
+                         @media (max-width: 332px) 
+                         {
+                           top: 42%;
+                         }
+      }
+   }
+
+   &_content-img {
+      padding-left: 77px;
+      border-radius: 4px;
+
+      img{
+         @media (max-width: 870px) {
+          max-width: 270px;
+       }
+        @media (max-width: 768px) {
+         display: none;
+        }
+      }
+       
+   }
+
+   &_content-text {
+      padding-left: 56px;
+       @media (max-width: 768px) {
+         padding-left: 20px;
+       }
+        @media (max-width: 452px) {
+         padding-left: 0px;
+        }
+
+
+      padding-right: 20px;
+/* additional font */
+
+color: #6B6B6C;
+
+      span{
+         width: 86px;
+         display: block;
+         margin-bottom: 24px;
+         height: 3px;
+         background-color: #FFCE50;
+         z-index: 100;
+      }
+
+   }
+
+   &_content-sub {
+      max-width: 568px;
+      font-family: 'PT Sans';
+font-style: normal;
+font-weight: 400;
+font-size: 16px;
+line-height: 150%;
+/* or 24px */
+   }
+}
+
+.step {
+
+   &_content-title {
+      font-family: 'Exo 2';
+font-style: normal;
+font-weight: 600;
+font-size: 20px;
+line-height: 125%;
+/* or 25px */  
+
+
+
+/* main font */
+
+color: #363738;
+      margin-bottom: 24px;
+   }
+}

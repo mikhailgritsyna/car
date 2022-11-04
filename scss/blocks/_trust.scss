@@ -1,0 +1,128 @@
+.trust {
+   margin-top: clamp(4rem, 2.727rem + 6.36vw, 7.5rem);
+   &_container {
+      padding: 0 20px;
+   }
+
+   &_title {
+      margin-bottom: clamp(1.563rem, 0.085rem + 7.39vw, 5.625rem);
+   }
+
+   &_items {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      align-content: space-around;
+
+      align-items: center;
+      grid-gap: clamp(1.563rem, 0.085rem + 7.39vw, 5.625rem);
+       @media (max-width: 1030px) {
+      grid-template-columns: repeat(3, 1fr);
+
+       }
+        @media (max-width: 768px) {
+      grid-template-columns: repeat(2, 1fr);
+         
+        }
+         @media (max-width: 550px) {
+            
+         }
+   }
+  
+   &_item {
+      display: flex;
+      flex-direction: column;
+      text-align: center;
+     height: 100%;
+      border-right: 1px solid #D7D7DD;
+      padding-right: clamp(1.875rem, 1.102rem + 3.86vw, 4rem);
+       @media (max-width: 1030px) {
+
+         &:nth-child(3){
+            border-right: none;
+         }
+         &:nth-child(4){
+      border-right: 1px solid #D7D7DD !important;
+
+         }
+         &:nth-child(6){
+            border-right: none;
+         }
+          @media (max-width: 768px) {
+            &:nth-child(odd){
+               border-right: 1px solid #D7D7DD !important;
+
+            }
+            &:nth-child(even){
+               border-right: none !important;
+
+
+            }
+          }
+       }
+      &-img{
+         display: flex;
+         justify-content: center;
+      align-items: center;
+    min-height: 130px;
+  margin-bottom: 10px;
+          img{
+           @media (max-width: 550px) {
+            max-width: 100%;
+           }
+         }
+       
+      }
+      &-text{
+         
+
+         vertical-align: bottom;
+      }
+      &-title{
+         font-family: 'Exo 2';
+         font-style: normal;
+         font-weight: 600;
+         font-size: 20px;
+         line-height: 135%;
+         /* or 27px */
+         
+         
+         /* main font */
+         
+         color: #363738;
+      }
+      &-sub{
+         font-style: normal;
+         font-weight: 400;
+         font-size: 14px;
+         /* or 21px */
+         width: 100%;
+         
+         /* additional font */
+         
+         color: #6B6B6C;
+         
+         font-family: 'PT Sans';
+      }
+
+      &:nth-child(4){
+         border-right: none;
+      padding-right: 0;
+    
+
+      }
+      &:last-child{
+         border-right: none;
+      padding-right: 0;
+
+      }
+   }
+   &_item-sec{
+      border-right: 1px solid #D7D7DD;
+      &:last-child{
+         border-right: none;
+      }
+
+   }
+}
+.title {
+}

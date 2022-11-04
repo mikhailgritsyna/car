@@ -1,0 +1,127 @@
+
+.header {
+   padding-top: clamp(1.875rem, 0.049rem + 9.13vw, 7.125rem);
+   position: relative;
+   &_container {
+      margin: 0 15px;
+      display: flex;
+      padding-right: 15px;
+      padding-left: 15px;
+      justify-content: space-between;
+      align-items: center;
+      padding-bottom: clamp(1.875rem, -1.125rem + 15vw, 10.5rem);
+       @media (max-width: 992px) {
+         display: block;
+         padding-bottom: 0;
+        
+          
+       }
+        @media (max-width: 680px) 
+        {
+         padding-bottom: clamp(6.25rem, 4.489rem + 8.8vw, 11.313rem);
+        }
+   }
+
+   &_text {
+      margin-right: 30px;
+      @media (max-width: 680px) {
+         color: #fff;
+       }
+   }
+
+   &_sub {
+      font-weight: 400;
+font-size: 16px;
+line-height: 150%;
+/* or 24px */
+font-family: 'PT Sans';
+
+      max-width: 525px;
+/* additional font */
+
+
+color: #6B6B6C; 
+@media (max-width: 820px) {
+         max-width: 444px;
+       }
+@media (max-width: 680px) {
+   color: #fff !important;
+ }
+      
+   }
+
+   &_link {
+      padding-top: 30px;
+      font-weight: 700;
+font-size: 16px;
+line-height: 150%;
+/* or 24px */
+
+      
+font-family: 'PT Sans';
+
+/* main font */
+
+color: #363738;
+border-bottom: 3px solid #FFCE50;
+      display: inline-block;
+       @media (max-width: 992px) {
+         margin-bottom: clamp(2.5rem, 2.261rem + 1.2vw, 3.188rem);
+       }
+      @media (max-width: 680px) {
+         color: #fff;
+       }
+   }
+
+   &_img {
+      img{
+         width: 100%;
+          @media (max-width: 992px) {
+            border-radius: 15px;
+            padding: 0 41px;
+          }
+      }
+   }
+}
+.heaeder {
+
+   &_title {
+      font-weight: 600;
+      padding-bottom: 40px;
+font-size: clamp(1.75rem, 1.228rem + 2.61vw, 3.25rem);
+line-height: 125%;
+max-width: 610px;
+width: 100%;
+/* or 65px */
+
+font-family: 'Exo 2';
+/* main font */
+
+color: #363738;
+       @media (max-width: 992px) {
+         max-width: 468px;
+       }
+       @media (max-width: 680px) {
+         color: #fff;
+       }
+
+   }
+}
+
+
+.bggreen {
+   background-color:#0B7572;
+   width: 43%;
+   position: absolute;
+   right: 0;
+   top: 0;
+   height: 99%;
+   z-index: -1;
+    @media (max-width: 992px) {
+      width: 30%;
+    }
+     @media (max-width: 680px) {
+      width: 100%;
+     }
+}
+

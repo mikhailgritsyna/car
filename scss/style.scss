@@ -1,0 +1,44 @@
+@import "./reset";
+@import "./blocks/header";
+@import "./blocks/header";
+@import "./blocks/search";
+@import "./blocks/sphere";
+@import "./blocks/answer";
+@import "./blocks/why";
+@import "./blocks/work";
+@import "./blocks/clients";
+@import "./blocks/steps";
+@import "./blocks/trust";
+@import "./blocks/employees";
+@import "./blocks/contact";
+@import "./blocks/request";
+@import "./blocks/footer";
+
+[class*="_container"]{
+max-width: 1240px;
+margin: 0 auto;
+}
+
+body{
+   background-color: #fff;
+   
+}
+.text{
+   color: #6B6B6C;
+   font-size: 16px;
+
+}
+.title{
+    
+   font-weight: 600;
+   font-size: clamp(1.563rem, 1.04rem + 2.61vw, 3rem);
+   line-height: 125%;
+   /* or 60px */
+   
+   
+   /* main font */
+   
+   color: #363738;
+   font-family: 'Exo 2';
+
+}
